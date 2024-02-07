@@ -1,0 +1,277 @@
+.body{
+  /* background-image: url("./image/dark-blue-pattern-with-abstract-stars-vector.jpg"); */
+  background-size: "cover";
+  background-repeat: "no-repeat";
+  height: 97vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heading{
+  position: absolute;
+  color: gold;
+  top: 0%;
+  left: 40%;
+  justify-content:"center"
+}
+
+.planets{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  position: relative;
+}
+
+.sun{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 50px gold;
+  
+}
+
+.mercury{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 400px;
+  right: -5px;
+  /* background-image: url("./image/3D_Mars.png"); */
+  /* background-color: rgb(193, 149, 61); */
+  border-radius: 50%;
+  /* transform-origin: top left; */
+  animation: rotate-mercury 12s linear infinite;
+}
+
+.venus{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 380px;
+  left: -20px;
+  background-color: rgb(47, 170, 41);
+  border-radius: 50%;
+  transform-origin: top left;
+  animation: rotate-venus 12s linear 2s infinite;
+}
+
+.earth{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 400px;
+  left: -10px;
+  background-color: darkcyan;
+  border-radius: 50%;
+  transform-origin: top left;
+  animation: rotate-earth 12s linear infinite;
+}
+
+.earth::before{
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 2px dashed rgba(153, 0, 0, 0.5);
+  box-sizing: border-box;
+  transform-origin: 0 0; 
+  transform: translate(-50%, -50%);
+ }
+
+.moon{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+  border-radius: 50%;
+  /* transform-origin: top left; */
+  animation: rotate-moon 12s linear infinite;
+}
+
+.mars{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 400px;
+  left: 0px;
+  background-color: rgb(35, 9, 230);
+  border-radius: 50%;
+  transform-origin: top left;
+  animation: rotate-mars 12s linear 3s infinite;
+}
+
+.jupiter{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 420px;
+  left: -10px;
+  background-color: rgb(253, 17, 166);
+  border-radius: 50%;
+  transform-origin: top left;
+  animation: rotate-jupiter 12s linear 2s infinite;
+}
+
+.saturn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 400px;
+  left: -10px;
+  background-color: rgb(225, 252, 21);
+  border-radius: 50%;
+  transform-origin: top left;
+  animation: rotate-saturn 12s linear 3s infinite;
+}
+
+.uranus{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 400px;
+  left: -10px;
+  background-color: rgb(229, 20, 20);
+  border-radius: 50%;
+  transform-origin: top left;
+  animation: rotate-uranus 12s linear 1s infinite;
+}
+
+.neptune{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 400px;
+  left: -10px;
+  background-color: darkcyan;
+  border-radius: 50%;
+  transform-origin: top left;
+  animation: rotate-neptune 12s linear 2s infinite;
+}
+
+@keyframes rotate-mercury
+{
+  0%
+  {
+    transform: rotate(0deg) translate(85px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(85px)
+  }
+}
+
+@keyframes rotate-venus
+{
+  0%
+  {
+    transform: rotate(0deg) translate(100px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(100px)
+  }
+}
+
+@keyframes rotate-earth
+{
+  0%
+  {
+    transform: rotate(0deg) translate(150px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(150px)
+  }
+}
+
+@keyframes rotate-mars
+{
+  0%
+  {
+    transform: rotate(0deg) translate(200px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(200px)
+  }
+}
+
+@keyframes rotate-jupiter
+{
+  0%
+  {
+    transform: rotate(0deg) translate(250px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(250px)
+  }
+}
+
+@keyframes rotate-saturn
+{
+  0%
+  {
+    transform: rotate(0deg) translate(300px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(300px)
+  }
+}
+
+@keyframes rotate-uranus
+{
+  0%
+  {
+    transform: rotate(0deg) translate(310px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(310px)
+  }
+}
+
+@keyframes rotate-neptune
+{
+  0%
+  {
+    transform: rotate(0deg) translate(320px)
+  }
+  100%
+  {
+    transform: rotate(360deg) translate(320px)
+  }
+}
+
+
+  @keyframes rotate-moon
+{
+  0%
+  {
+    transform: rotate(0deg) translateX(10px);
+  }
+  100%
+  {
+    transform: rotate(360deg) translateX(10px);
+  }
+}
+
+/* .earth,
+.moon {
+  position: absolute;
+  border-style: solid;
+  border-color: white transparent transparent;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 50%;
+} */
