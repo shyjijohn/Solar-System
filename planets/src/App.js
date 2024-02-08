@@ -4,18 +4,11 @@ function App() {
 
   return (
     <div >
-
-      {/* <h1 class="heading">SOLAR SYSTEM</h1> */}
-
-      {/* <div class="planets"> */}
+      <div class="heading">SOLAR SYSTEM</div>
         <div class="sun"></div>
 
-        <div class="mercury"/>
+        <div class="mercury"></div>
         <div class="venus"></div>
-        <div class="earth">
-          <div class="moon"></div>
-        </div>
-        {/* <div class="venus"></div>
         <div class="earth">
           <div class="moon"></div>
         </div>
@@ -23,8 +16,7 @@ function App() {
         <div class="jupiter"></div>
         <div class="saturn"></div>
         <div class="uranus"></div>
-        <div class="neptune"></div> */}
-      {/* </div> */}
+        <div class="neptune"></div>
     </div>
   );
 }

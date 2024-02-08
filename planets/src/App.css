@@ -1,5 +1,5 @@
 html, body{
-  background-image: url("./image/dark-blue-pattern-with-abstract-stars-vector.jpg"); 
+  background-image: url("./image/bg.jpg"); 
   height: 100vh;
   display: flex;
   align-items: center; 
@@ -10,8 +10,9 @@ html, body{
 
 .heading{
   position: absolute;
-  top: 0%;
+  top: 5%;
   left: 40%;
+  font-size: x-large;
   color: gold;
 }
 
@@ -27,23 +28,31 @@ html, body{
 
 .mercury{
   position: absolute;
-  width: 10px;
-  height: 10px; 
-  background-color: rgb(193, 149, 61);
+  width: 20px;
+  height: 20px; 
+  background-image: url("./image/mercury.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  transform: translate(50px, 50px);
+  transform: translate(40px, 40px);
   transform-origin: top left;
-  animation: rotate-mercury 12s linear infinite;
+  animation: rotate-mercury 7s linear infinite;
 }
 
 .venus{
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: rgb(47, 170, 41);
+  width: 30px;
+  height: 30px;
+  background-image: url("./image/venus.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  transform: translate(150px);
-  animation: rotate-venus 12s linear  infinite;
+  transform: translate(80px, -80px);
+  animation: rotate-venus 15s linear  infinite;
 }
 
 .earth{
@@ -55,18 +64,17 @@ html, body{
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  /* background-color: darkcyan; */
   border-radius: 50%;
-  transform: translate(150px, -150px);
+  transform: translate(120px, -120px);
   transform-origin: top left;
-  animation: rotate-earth 30s linear infinite;
+  animation: rotate-earth 12s linear infinite;
 }
 
 .earth::before{
   content: " ";
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   top: 50%;
   left: 50%;
   border-radius: 50%;
@@ -80,7 +88,7 @@ html, body{
   position: absolute;
   width: 25px;
   height: 25px;
-  transform: translate(50px, 50px);
+  transform: translate(40px, 40px);
   background-image: url("./image/moon.png"); 
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,78 +96,88 @@ html, body{
   background-position-y: center;
   border-radius: 50%;
   transform-origin: 25px 25px;
-  animation: rotate-moon 12s linear infinite;
+  animation: rotate-moon 10s linear infinite;
 }
 
 .mars{
   position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 400px;
-  left: 0px;
-  background-color: rgb(35, 9, 230);
+  width: 28px;
+  height: 28px;
+  background-image: url("./image/mars.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  transform-origin: top left;
-  animation: rotate-mars 12s linear 3s infinite;
+  transform: translate(170px,-170px);
+  animation: rotate-mars 14s linear infinite;
 }
 
 .jupiter{
   position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 420px;
-  left: -10px;
-  background-color: rgb(253, 17, 166);
+  width: 65px;
+  height: 65px;
+  background-image: url("./image/jupiter.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  transform-origin: top left;
-  animation: rotate-jupiter 12s linear 2s infinite;
+  transform: translate(200px,-200px);
+  animation: rotate-jupiter 16s linear infinite;
 }
 
 .saturn{
   position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 400px;
-  left: -10px;
-  background-color: rgb(225, 252, 21);
+  width: 100px;
+  height: 100px;
+  background-image: url("./image/saturn.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  transform-origin: top left;
-  animation: rotate-saturn 12s linear 3s infinite;
+  transform: translate(250px,-250px);
+  animation: rotate-saturn 17s linear infinite;
 }
 
 .uranus{
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 400px;
-  left: -10px;
-  background-color: rgb(229, 20, 20);
+  background-image: url("./image/uranus.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  transform-origin: top left;
-  animation: rotate-uranus 12s linear 1s infinite;
+  transform: translate(270px,-270px);
+  animation: rotate-uranus 20s linear infinite;
 }
 
-/* .neptune{
+.neptune{
   position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 400px;
-  left: -10px;
-  background-color: darkcyan;
+  width: 45px;
+  height: 45px;
+  background-image: url("./image/neptune.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  transform-origin: top left;
-  animation: rotate-neptune 12s linear 2s infinite;
-} */
+  transform: translate(300px,-300px);
+  animation: rotate-neptune 25s linear infinite;
+}
 
 @keyframes rotate-mercury
 {
   0%
   {
-    transform: rotate(0deg) translate(50px, 50px);
+    transform: rotate(0deg) translate(40px, 40px);
   }
   100%
   {
-    transform: rotate(360deg) translate(50px, 50px);
+    transform: rotate(360deg) translate(40px, 40px);
   }
 }
 
@@ -167,11 +185,11 @@ html, body{
 {
   0%
   {
-    transform: rotate(0deg) translate(150px)
+    transform: rotate(0deg) translate(80px, -80px)
   }
   100%
   {
-    transform: rotate(360deg) translate(150px)
+    transform: rotate(360deg) translate(80px, -80px);
   }
 }
 
@@ -179,11 +197,11 @@ html, body{
 {
   0%
   {
-    transform: rotate(0deg) translate(150px, -150px);
+    transform: rotate(0deg) translate(120px, -120px);
   }
   100%
   {
-    transform: rotate(360deg) translate(150px, -150px);
+    transform: rotate(360deg) translate(120px, -120px);
   }
 }
 
@@ -199,33 +217,26 @@ html, body{
   }
 } 
 
-/* 
-
-
-
-
-
 @keyframes rotate-mars
 {
   0%
   {
-    transform: rotate(0deg) translate(200px)
+    transform: rotate(0deg) translate(170px,-170px)
   }
   100%
   {
-    transform: rotate(360deg) translate(200px)
+    transform: rotate(360deg) translate(170px,-170px)
   }
 }
-
 @keyframes rotate-jupiter
 {
   0%
   {
-    transform: rotate(0deg) translate(250px)
+    transform: rotate(0deg) translate(200px,-200px)
   }
   100%
   {
-    transform: rotate(360deg) translate(250px)
+    transform: rotate(360deg) translate(200px,-200px)
   }
 }
 
@@ -233,23 +244,23 @@ html, body{
 {
   0%
   {
-    transform: rotate(0deg) translate(300px)
+    transform: rotate(0deg) translate(250px,-250px)
   }
   100%
   {
-    transform: rotate(360deg) translate(300px)
+    transform: rotate(360deg) translate(250px,-250px)
   }
-}
+} 
 
 @keyframes rotate-uranus
 {
   0%
   {
-    transform: rotate(0deg) translate(310px)
+    transform: rotate(0deg) translate(270px,-270px)
   }
   100%
   {
-    transform: rotate(360deg) translate(310px)
+    transform: rotate(360deg) translate(270px,-270px)
   }
 }
 
@@ -257,22 +268,10 @@ html, body{
 {
   0%
   {
-    transform: rotate(0deg) translate(320px)
+    transform: rotate(0deg) translate(300px,-300px)
   }
   100%
   {
-    transform: rotate(360deg) translate(320px)
+    transform: rotate(360deg) translate(300px,-300px)
   }
 }
-
-
-*/
-
-/* .earth,
-.moon {
-  position: absolute;
-  border-style: solid;
-  border-color: white transparent transparent;
-  border-width: 1px 1px 1px 1px;
-  border-radius: 50%;
-} */
