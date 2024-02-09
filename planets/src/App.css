@@ -20,9 +20,12 @@ html, body{
   position: absolute;
   width: 100px;
   height: 100px;
-  background-color: gold;
+  background-image: url("./image/sun.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   border-radius: 50%;
-  box-shadow: 0 0 50px gold;
   transform: translate(-50%, -50%); 
 }
 
