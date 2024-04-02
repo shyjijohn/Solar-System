@@ -7,7 +7,7 @@ Animated the movement of planets in the Solar-System using HTML and CSS
 
 Demo Development
 
-git clone https://shyjijohn.github.io/Solar-System/
+git clone https://github.com/shyjijohn/Solar-System.git
 
 cd planets
 
