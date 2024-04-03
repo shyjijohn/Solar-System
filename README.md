@@ -5,8 +5,9 @@ Movement of the Planets in Our Solar System
 
 Animated the movement of planets in the Solar-System using HTML and CSS
 
-Demo Development
+## Demo Development
 
+```bash
 git clone https://github.com/shyjijohn/Solar-System.git
 
 cd planets
@@ -14,3 +15,4 @@ cd planets
 npm i 
 
 npm start
+```
